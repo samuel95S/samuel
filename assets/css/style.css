@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f00808;
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+header{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  background-color: #080808;
+  border-bottom: 1px solid rgb(red, 115, 7, 7);
+  position: static;
+  top:0;
+  z-index: 10;
+}
+
+.logo{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo::first-letter{
+  color: #f00808;
+}
+
+.menu{
+  display: flex;
+  gab: 30px;
+}
+
+.menu a {
+  color: blanchedalmond;
+  text-decoration: nome;
+  font-size: 14px;
+}
+.menu a:hover{
+   color: aliceblue;
+  font-size: 100px;
+}
