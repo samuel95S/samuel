@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #f00808;
+  background-color: #0e0d0d;
   color: #ffff;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -33,7 +33,7 @@ header{
 
 .menu{
   display: flex;
-  gab: 30px;
+  gap: 30px;
 }
 
 .menu a {
@@ -50,9 +50,91 @@ header{
   position: relative;
   overflow: hidden;
 }
-.destaque img{
+.destaque img {
   width: 100%;
-  height: 520;
+  height: 520%;
   object-fit: cover;
   display: block;
+}
+
+
+.destaque::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+  linear-gradient(
+    90deg,
+    rgba(0, 0, 0,0.95),
+     rgba(0,0,0,0.65),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+.destaque-conteudo{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  left: 8%;
+  transform: translatey(-50%);
+  max-width: 620px;
+}
+
+.categoria {
+  color: #e63946;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+h1{
+  font-size: 52px;
+  line-height: 1.05;
+  margin: 12px 0 20px;
+}
+.destaque p {
+  color: bisque;
+  max-width: 550px;
+  margin-bottom: 25pxs;
+}
+
+.botao{
+  padding: 13px 22px;
+  border: none;
+  border-radius: 400px;
+  background-color: #f00808;
+  color: beige;
+  font-weight: bold;
+  cursor: pointer;
+}
+.butao:hover {
+  background-color: #e63946;
+  scale: 1.1;
+}
+
+.secao{
+  padding: 70px 8%;
+}
+
+.titulo{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 30px;
+}
+
+.titulo span {
+ color:#f00808;
+ font-weight: bold;
+ letter-spacing: 2px;
+}
+.titulo a{
+  color: #aaa;
+  font-size: none;
+  text-decoration: none;
+}
+
+.titulo a:hover {
+  color: beige;
 }
