@@ -1,8 +1,19 @@
-console.log("hello world")
+const imgsDestaques =["./assets/img/zelda.avif", "./assets/img/roblox.jpg", "./assets/img/redemption.jpg"]
 
-const Samuel = "samuel"
+let ImagemAtual =1
 
-console.log(Samuel)
-
-let samuel = "ola"
+const imagem = document.querySelector("#imagemDestaque")
+ 
+setInterval(function (){
+    ImagemAtual++;
+    if(ImagemAtual >= imgsDestaques.length){
+        ImagemAtual = 0;
+    }
+ 
+    imagem.src = imgsDestaques[ImagemAtual]
+ 
+ 
+}, 5000)  
+ 
+ 
 
